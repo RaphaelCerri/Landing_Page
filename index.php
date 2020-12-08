@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,7 +31,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6" id="form-container">
-                    <form id="step_1" class="form-step">
+                    <form action="1PHP.php" method="POST" id="step_1" class="form-step">
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <div class="panel-title">
@@ -42,7 +41,6 @@
                             <div class="panel-body">
                                 <fieldset>
                                     <div class="row form-group">
-                                        <form method="get" action="1PHP.php">
                                         <div class="col-lg-6">
                                             <label>Nome Completo</label>
                                             <input class="form-control" type="text" name="nome" placeholder="Nome">
@@ -52,7 +50,6 @@
                                             <input class="form-control" type="date" name="data_nascimento"
                                                 placeholder="01-10-2020">
                                         </div>
-                                        <form method="get" action="1PHP.php">
                                     </div>
 
                                     <div class="row form-group">
@@ -77,7 +74,7 @@
                             </div>
                         </div>
                     </form>
-                    <form id="step_2" class="form-step" style="display:none">
+                    <form action="1PHP.php" method="POST" id="step_2" class="form-step" style="display:none">
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <div class="panel-title">

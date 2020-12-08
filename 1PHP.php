@@ -10,7 +10,7 @@
     <div>
         <?php
         $Score = 10;
-        global $datanascimento = $_GET["data_nascimento"];
+        $datanascimento = $_POST["data_nascimento"];
         if ($datanascimento >= "07-12-1920" || $datanascimento < "07-12-2002") {
             $Score -= 5;
         } elseif ($dataNascimento >= "07-12-1980" && $datanascimento < "07-12-1920") {
@@ -22,8 +22,8 @@
     </div>
     <div>
         <?php
-        global $regi = $_GET["regiao"];
-        global $uni = $_GET["unidade"];
+        $regi = $_POST["regiao"];
+        $uni = $_POST["unidade"];
         if ($regi == "Sul") {
             $Score = -2;
         } elseif ($regi == "Sudeste") {
