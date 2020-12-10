@@ -1,4 +1,4 @@
-let regiao = document.getElementsByName("regiao").onchange = function() {
+let regiao = document.getElementsByName("regiao").onchange = function () {
     mudarUnidade();
 };
 
@@ -35,7 +35,7 @@ function mudarUnidade() {
             document.getElementById("unidSAL").style.display = "none";
             document.getElementById("unidREC").style.display = "none";
             document.getElementById("unidNPS").style.display = "none";
-            unid.value = "selec","portoalegre", "curitiba";
+            unid.value = "selec", "portoalegre", "curitiba";
             break;
         case 'Sudeste':
             document.getElementById("unidSEL").style.display = "inline";
@@ -97,3 +97,4 @@ function mudarUnidade() {
             unid.value = "indisponivel";
     }
 }
+

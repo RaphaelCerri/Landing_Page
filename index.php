@@ -26,16 +26,19 @@
     <div class="container">
         <div class="row" style="margin:30px 0">
             <div class="col-lg-3">
-                <img src="img/logo.png" class="img-thumbnail" style="display: table-cell; float:left;">
+                <img width="220px" src="img/logo.png" class="img-thumbnail" style="display: table-cell; float:left;">
             </div>
             <div class="col-lg-9" style="display: table-cell; float:left;">
                 <h3 style="color: #DAA520;">Óculos de Sol</h3>
                 <h1 style="color: #DAA520;">SunStylish</h1>
             </div>
+            <div class="col-lg-3" style="display: table-cell; float:left;">
+                <img width="170px" src="img/glasses.jpg" class="img-thumbnail" style="display: table-cell; float:left;">
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-6" id="form-container">
-                <form action="1PHP.php" method="POST" id="step_1" class="form-step">
+                <form action="db_connect.php" method="POST" id="step_1" class="form-step">
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <div class="panel-title">
@@ -51,7 +54,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label>Data de Nascimento</label>
-                                        <input class="form-control" type="date" name="data_nascimento" placeholder="01-10-2020">
+                                        <input id="datin" class="form-control" type="date" name="data_nascimento" placeholder="aaaa-mm-dd">
                                     </div>
                                 </div>
 
@@ -74,7 +77,7 @@
                         </div>
                     </div>
                 </form>
-                <form action="1PHP.php" method="POST" id="step_2" class="form-step" style="display:none">
+                <form action="db_connect.php" method="POST" id="step_2" class="form-step" style="display:none">
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <div class="panel-title">
@@ -112,8 +115,9 @@
                                         </select>
                                     </div>
                                 </div>
+
                                 <div>
-                                    <button type="submit" class="btn btn-lg btn-info next-step">Enviar</button>
+                                    <button name="btn-entrar" type="submit" class="btn btn-lg btn-info next-step">Enviar</button>
                                 </div>
                             </fieldset>
                         </div>
@@ -152,5 +156,4 @@
         });
     </script>
 </body>
-
 </html>
